@@ -5,16 +5,27 @@ import Results from './components/Results';
 // Materialize
 import M from 'materialize-css';
 // API
-// import API from "./utils/API";
+import API from "./utils/API";
 
 
 class App extends Component {
   state = {
-
+    search: "",
+    results: [],
+    error: ""
   }
 
   componentDidMount() {
     M.AutoInit();
+
+    API.getRandomEmployee()
+      .then(res => this.setState({ results: res.data }))
+      .catch(err => console.log(err));
+  };
+
+  handleInputChange = event => {
+    const value = event.target.value;
+    this.setState({ search: value });
   };
 
   render() {
