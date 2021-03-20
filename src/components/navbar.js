@@ -8,7 +8,7 @@ function NavBar() {
     return (
         <div className="navbar-fixed">
             <nav>
-                <div className="nav-wrapper row indigo">
+                <div className="nav-wrapper row deep-purple">
                     <form>
                         <Search />
                         <SortMenu />
