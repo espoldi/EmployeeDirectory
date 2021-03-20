@@ -1,9 +1,9 @@
 import React from "react";
 
-function Input() {
+function Search() {
     return (
         <form>
-            <div className="input-field">
+            <div className="input-field grey darken-4">
                 <input id="search" type="search" required />
                 <label className="label-icon" for="search"><i className="material-icons">search</i></label>
                 <i className="material-icons">close</i>
@@ -12,4 +12,4 @@ function Input() {
     );
 }
 
-export default Input;
+export default Search;
