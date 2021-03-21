@@ -11,7 +11,7 @@ import API from "./utils/API";
 class App extends Component {
   state = {
     search: "",
-    results: [],
+    directory: [],
     error: ""
   }
 
@@ -19,7 +19,7 @@ class App extends Component {
     M.AutoInit();
 
     API.getRandomEmployee()
-      .then(res => this.setState({ results: res.data }))
+      .then(res => this.setState({ directory: res.data.results }))
       .catch(err => console.log(err));
   };
 
@@ -32,7 +32,7 @@ class App extends Component {
     return (
       <>
         <NavBar />
-        <Results />
+        <Results employees={ this.state.directory } />
       </>
     );
   }
