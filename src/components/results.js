@@ -3,12 +3,10 @@ import InfoCard from "./InfoCard";
 
 function Results(props) {
     return (
-        <div class="row">
-            <div class="col s12 m4">
-                {props.employees.map(person => (
-                    <InfoCard data={ person } />
+        <div className="container row">
+                {props.employees.map((person, index) => (
+                    <InfoCard data={ person } key={ index } />
                 ))}
-            </div>
         </div>
 
     );
