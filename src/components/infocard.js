@@ -7,11 +7,11 @@ function InfoCard(props) {
                 <img class="activator" src={props.data.picture.large} />
             </div>
             <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">{props.data.name.title} {props.data.name.first} {props.data.name.last}<i class="material-icons right">more_vert</i></span>
+                <span class="card-title activator grey-text text-darken-4">{props.data.name.title} {props.data.name.last}<i class="material-icons right">more_vert</i></span>
             </div>
             <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">{props.data.name.title} {props.data.name.first} {props.data.name.last}<i class="material-icons right">close</i></span>
-                <span>Age: {props.data.dob.age}<br/>
+                <span class="card-title grey-text text-darken-4">{props.data.name.first} {props.data.name.last}<i class="material-icons right">close</i></span>
+                <span>{props.data.gender}, {props.data.dob.age}<br/>
                 Email: {props.data.email}<br/>
                 Phone: {props.data.phone}<br/>
                 Location: {props.data.location.country}</span>
