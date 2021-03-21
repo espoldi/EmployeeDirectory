@@ -1,19 +1,16 @@
 import React from "react";
 
 import Search from "./Search";
-import SortMenu from "./SortMenu";
-import FilterMenu from "./FilterMenu";
+import Menu from "./Menu";
+import MenuContent from "./MenuContent";
 
 function NavBar() {
     return (
-        <div className="navbar-fixed">
+        <div className="navbar-fixed row">
+            <MenuContent />
             <nav>
-                <div className="nav-wrapper row deep-purple">
-                    <form>
+                <div className="nav-wrapper deep-purple">
                         <Search />
-                        <SortMenu />
-                        <FilterMenu />
-                    </form>
                 </div>
             </nav>
         </div>
