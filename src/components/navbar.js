@@ -3,7 +3,7 @@ import React from "react";
 import Search from "./Search";
 import Menu from "./Menu";
 
-function NavBar() {
+function NavBar(props) {
     return (
         <div className="navbar-fixed row">
             <nav>
@@ -11,7 +11,7 @@ function NavBar() {
                 <a class="brand-logo left">Directory</a>
                     <form>
                         <Menu />
-                        <Search />
+                        <Search change={ props.change }/>
                     </form>
                 </div>
             </nav>

@@ -31,7 +31,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <NavBar />
+        <NavBar change={ this.handleInputChange } />
         <Results employees={ this.state.directory } />
       </>
     );
