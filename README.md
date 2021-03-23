@@ -26,9 +26,9 @@ Make sure that your command prompt is in the correct folder and type in the foll
 
 ## Usage
 
-[Github Repository](https://github.com/espoldi/employee-directory)
+[Github Repository](https://github.com/espoldi/EmployeeDirectory)
 
-[Live Site]()
+[Live Site](https://espoldi.github.io/EmployeeDirectory)
 
 ## License
 
