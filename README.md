@@ -30,6 +30,8 @@ Make sure that your command prompt is in the correct folder and type in the foll
 
 [Live Site](https://espoldi.github.io/EmployeeDirectory)
 
+![Website Screenshot](/directory.png)
+
 ## License
 
 This project is protected under MIT License.
