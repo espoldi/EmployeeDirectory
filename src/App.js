@@ -27,6 +27,19 @@ class App extends Component {
       .catch(err => console.log(err));
   };
 
+  sortData = event => {
+    event.preventDefault();
+    let unsorted = this.state.directory;
+    let sorted = unsorted.sort((a, b) => {
+      let aFullName = (a.name.first + a.name.last).toLowerCase().trim();
+      let bFullName = (b.name.first + b.name.last).toLowerCase().trim();
+      if (aFullName < bFullName) return -1;
+      if (aFullName > bFullName) return 1;
+      return 0;
+    });
+    this.setState({ directory: sorted });
+  };
+
   handleInputChange = event => {
     const value = event.target.value;
     let query = value.toLowerCase().trim();
@@ -50,7 +63,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <NavBar change={this.handleInputChange} />
+        <NavBar change={this.handleInputChange} sort={ this.sortData } />
         <Results employees={this.state.directory} />
       </>
     );

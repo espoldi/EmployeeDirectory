@@ -10,7 +10,7 @@ function NavBar(props) {
                 <div className="nav-wrapper grey darken-4">
                 <a class="brand-logo left">Directory</a>
                     <form>
-                        <Menu />
+                        <Menu sort={ props.sort } />
                         <Search change={ props.change }/>
                     </form>
                 </div>

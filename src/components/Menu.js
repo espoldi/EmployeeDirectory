@@ -1,12 +1,10 @@
 import React from 'react';
 
-function Menu() {
+function Menu(props) {
     return (
         <>
             <ul id="sort" className="dropdown-content">
-                <li><a>one</a></li>
-                <li><a>two</a></li>
-                <li><a>three</a></li>
+                <li><a onClick={ props.sort }>A to Z</a></li>
             </ul>
 
             <ul id="nav-mobile" className="right">
